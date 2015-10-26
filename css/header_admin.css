@@ -1,0 +1,25 @@
+/*======== Header =====================*/
+.header {
+  background-color: #333; 
+  border-bottom: 1px solid #7ACEF4; 
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  overflow: auto; 
+
+}
+
+.header #logo {
+  position: relative; 
+  float:left;
+}
+.header #logo img {
+  width: 200px; 
+  height: 70px;
+}
+.header .info_block {
+  display: inline-block; 
+  position:relative; 
+  float: right; 
+  margin: 5px;
+  color: #E0EEEE; 
+}

@@ -1,0 +1,293 @@
+body {
+  min-width: 1024px;
+}
+
+.body {
+  max-width: 90%;
+  width: 1024px;
+  margin: 0px auto;
+  height: 73%; 
+  overflow: hidden;
+}
+
+#body_bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+}
+
+/*=== FOR INTERFACE FACTORY ===*/
+.button {
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin: 0px 10px;
+  padding: 0px 5px;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #6cab26, #6ceb86); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #6cab26, #6ceb86); /* FF3.6+ */
+  background-image: -o-linear-gradient(top, #6cab26, #6ceb86); /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, #6cab26, #6ceb86);  
+}
+
+h1 {
+  color: green;
+}
+
+/*======== STORE Products List ==============*/
+
+#store_product_list_wraper {
+  border-radius: 5px;
+  background: rgba(255,255,255,0.0);
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 20px;
+  overflow: hidden;
+  height:95%;
+  border-radius: 10px;
+
+  /*background: rgb(12, 204, 252);*/
+}
+
+#all_product_list {
+  height:100%;
+  width: calc(100% + 17px);
+  overflow: auto;
+}
+
+
+#store_product_list_wraper .window_top_gradient {
+  position: absolute;
+  width: 100%; 
+  height: 17px;
+  border-radius: 10px 10px 0 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #6cab26, #6ceb86); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, #ffffff, rgba(0,0,0, 0.1)); /* FF3.6+ */
+  background-image: -o-linear-gradient(top, #6cab26, #6ceb86); /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.0)); 
+}
+
+#store_product_list_wraper .window_bottom_gradient {
+  position: absolute;
+  width: 100%; 
+  height: 17px;
+  bottom: 18%;
+  border-radius: 0 0 10px 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #6cab26, #6ceb86); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(bottom, #00CCFF, rgba(0,204,255, 0.0)); /* FF3.6+ */
+  background-image: -o-linear-gradient(top, #6cab26, #6ceb86); /* Opera 11.10+ */
+  background-image: linear-gradient(to top, #00CCFF, rgba(255, 255, 255, 0.0)); 
+}
+
+#product_list {
+  margin: 20px; 
+  overflow: auto; 
+  border: 1px solid #CFCFCF; 
+  padding: 5px;
+
+}
+
+.buttons {
+  text-align: center;
+}
+
+/*=== FOR INTERFACE FACTORY ===*/
+.viewCategory .product_item, #all_product_list .viewCategoryItem {
+  display: inline-block;
+  max-width: 250px;
+  max-height: 300px;
+  min-width: 250px;
+  min-height: 300px;
+  padding: 3px 3px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(1,18,252,0.5);
+  /*border-bottom: 1px solid #CFCFCF;*/
+}
+
+#all_product_list .viewCategoryItem .prodImage {
+  /*display: inline-block;*/
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 90%;
+  max-height: 250px;
+  margin: 0px auto;
+}
+#all_product_list .viewCategoryItem .prodImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.prodProperties {
+  width: 100%;
+}
+
+.prodName, .prodPrice, .prodQty {
+  /*display: inline-block;*/
+  width: 100px;
+  margin: 0px auto;
+  color: #000;
+  text-align: center;
+}
+
+.qty_up, .qty_down {
+  cursor: pointer;
+}
+
+/*=== FOR FACTORY ===*/
+.cat_window {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.9);  
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+/*============= ADMIN PART =============*/
+
+#user_list, #admin_form {
+  width: 500px;
+  display: inline-block;
+  overflow: auto; 
+  background-color: #FFF5EE; 
+  border-radius: 3px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  color: #1C1C1C; 
+  margin: 20px;
+}
+
+#admin_form {
+  height: 300px;
+}
+
+/*============ CATEGORY IMAGE ===========*/
+
+.category_item {
+ /* position: absolute;
+    top: 50%;
+    left: 50%;
+  */  
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px 10px;
+    
+  /*  -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+  /*  -moz-transform: translate(-50%,-50%); /* Firefox */
+  /*  -ms-transform: translate(-50%,-50%); /* IE 9 */
+  /*  -o-transform: translate(-50%,-50%); /* Opera */
+  /*  transform: translate(-50%,-50%);*/
+}
+
+.menu_item_image {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;    
+}
+
+.menu_item_image img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.2s ease; /* Safari and Chrome */
+    -moz-transition: all 0.2s ease; /* Firefox */
+    -o-transition: all 0.2s ease; /* IE 9 */
+    -ms-transition: all 0.2s ease; /* Opera */
+    transition: all 0.2s ease;
+}
+
+.menu_item_image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.menu_item_name {
+    color: #000066;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative; 
+    /*background: rgb(255, 255, 255);*/
+}
+ /*
+.menu_item_name:after { 
+    content: attr(title); 
+    position: absolute; 
+    left: 0;
+    top: 100%; 
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    -moz-transform: scaleY(-1); 
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+    z-index: 1; 
+}
+.menu_item_name:before { /* эффект затухания */
+  /* 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80%; 
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,1)); 
+    background: -o-linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,1));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,1)));
+    position: absolute;
+    left: 0;
+    top: 110%; 
+    z-index: 2;  
+}
+*/
+
+/*============ STORE VIEW ===========*/
+
+.window_background {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11111;
+}
+
+.container {
+  overflow: auto;
+}
+
+/*=== FOR INTERFACE FACTORY ===*/
+.btn_close {
+  float: right;
+  border-radius: 10px;
+  background: #00F5FF;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+/*========= HEADER FOOTER=========*/
+.footer_store {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;  
+  border: 2px dotted #00f5ff;
+}
