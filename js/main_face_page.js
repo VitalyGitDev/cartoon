@@ -31,7 +31,7 @@ $(document).on('click', '.menu_item_image img', function(){
 	var w_height = $(document).height() - ($('.header_store').height() + $('.footer_store').height()),
         w_width = ($(document).width() / 5)*4,
         left = ($(document).width() - w_width)/2,
-		y = ($(document).height() - w_height)/2,
+		y = ($(document).height() - w_height)/7,
         cat_id = $(this).parents('.category_item').attr('cid');
 
     $('.category_item').hide();
