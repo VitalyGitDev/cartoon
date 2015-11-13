@@ -61,3 +61,11 @@
   display: block; 
   float: right;
 }
+.cart_popup {
+  position: absolute; 
+  background: #000;
+  width: 100px; 
+  height: 70px;
+  border-radius: 5px;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

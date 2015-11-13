@@ -1,4 +1,5 @@
-var WINDOW_FACTORY = new modal_window_factory();
+var WINDOW_FACTORY = new modal_window_factory(),
+    popup_cart_timeout = null;
 $(document).ready(function(){
     
     $('.cat_window').css({
@@ -61,6 +62,33 @@ $(document).on('click', '.btn_close', function(){
     $('.category_item').show();
     $('#store_product_list_wraper').show();
 });
+
+$(document).on('click', '#cart', function(){
+    alert('go into cart');
+});
+
+$(document).on('mouseover', '#cart', function(){
+    //alert('hover cart');
+    popup_cart_timeout = setTimeout(show_cart_popup($(this)), 500);
+});
+
+$(document).on('mouseout', '#cart', function(){
+    //alert('hover cart');
+    if (popup_cart_timeout) {
+        clearTimeout(popup_cart_timeout);
+        if (typeof $('.cart_popup') != 'undefined') {
+            $('.cart_popup').remove();
+        }
+    }
+    
+});
+
+function show_cart_popup(elem) {
+    elem.append('<div class="cart_popup"></div>');
+    elem.find('.cart_popup').offset(function(i, val){
+        return {top:val.top, left:val.left - 50}
+    });
+}
 
 function getCategoryProducts(id, container) {
 	

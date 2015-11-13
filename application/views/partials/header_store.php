@@ -11,7 +11,7 @@
 	<div class="right_block">
 		<img  src='/images/fon_test/header_block_1.png'  style="position: relative; z-index: 1; display: inline-block; float: right;"/>
 
-		<div class="cart" style="">
+		<div class="cart" id="cart" style="">
 			<img  src='/images/fon_test/basket.png' />
 		</div>	
 		
